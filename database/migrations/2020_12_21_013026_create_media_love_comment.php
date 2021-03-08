@@ -1,0 +1,35 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateMediaLoveComment extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('media_love_comment', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('user_id');
+            $table->string('media_id');
+            $table->string('love');
+            $table->string('comment');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('media_love_comment');
+    }
+}

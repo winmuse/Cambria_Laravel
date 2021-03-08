@@ -1,0 +1,16 @@
+<div class="table-responsive-sm">
+    <table class="table table-striped table-bordered" id="users_table">
+        <thead>
+        <th>{{ __('messages.profile') }}</th>
+        <th>{{ __('messages.name') }}</th>
+        <th>{{ __('messages.email') }}</th>
+        <th>{{ __('messages.twitter_link') }}</th>
+        <th>{{ __('messages.instagram_link') }}</th>
+        <th>{{ __('messages.youtube_link') }}</th>
+        <th>{{ __('messages.phone') }}</th>
+        <th>{{ __('messages.approved_state') }}</th>
+        <th>{{ __('messages.action') }}</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
